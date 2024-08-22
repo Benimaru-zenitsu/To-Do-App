@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  var path = window.location.pathname;
+  var segments = path.split("/").filter(function (el) {
+    return el.length !== 0;
+  });
+  if (segments.length > 0) {
+    window.location.href = "/To-Do-App/";
+  } else {
+    window.location.href = "/To-Do-App/index.html";
+  }
+</script>
